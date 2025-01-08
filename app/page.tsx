@@ -10,8 +10,8 @@ import { Input } from "@/components/ui/input";
 import { Progress } from "@/components/ui/progress";
 
 
-const SPOTIFY_CLIENT_ID = process.env.SPOTIFY_CLIENT_ID; // Update this to your app's client ID
-const REDIRECT_URI = process.env.REDIRECT_URI; // Update this to your app's URI
+const SPOTIFY_CLIENT_ID = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID; // Update this to your app's client ID
+const REDIRECT_URI = process.env.NEXT_PUBLIC_REDIRECT_URI; // Update this to your app's URI
 
 const App = () => {
   const [token, setToken] = useState<string | null>(null);
